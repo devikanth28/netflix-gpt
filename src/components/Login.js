@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from './util/UserSlice';
+import { Photo_Avatar } from './util/Constants';
 const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -35,18 +36,18 @@ const Login = () => {
                     // Signed up 
                     const user = userCredential.user;
                     updateProfile(user, {
-                        displayName: nameRef?.current?.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
+                        displayName: nameRef?.current?.value, photoURL: Photo_Avatar
                       }).then(() => {
                         // Profile updated!
                         const {uid, email, displayName} = auth.currentUser;
                         dispatch(addUser({uid:uid, email:email, displayName:displayName}))
-                        navigate("/browse")
+                        // navigate("/browse")
                       }).catch((error) => {
                         // An error occurred
                         setErrorMeassage(error)
                       });
                     console.log(user, "user")
-                    navigate("/browse")
+                    // navigate("/browse")
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -62,7 +63,7 @@ const Login = () => {
                     // Signed in 
                     const user = userCredential.user;
                     console.log("sign in", user);
-                    navigate("/browse")
+                    // navigate("/browse")
                 })
                 .catch((error) => {
                     const errorCode = error.code;

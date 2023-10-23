@@ -40,3 +40,6 @@
 .cusrsor-pointer {
   cursor: pointer;
 }
+.aspect-ratio{
+  aspect-ratio: 16 / 9;
+}

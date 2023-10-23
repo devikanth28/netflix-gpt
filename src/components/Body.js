@@ -10,7 +10,6 @@ import { addUser, removeUser } from './util/UserSlice'
 const Body = () => {
 
     const dispatch = useDispatch();
-   
 
     const appRouter = createBrowserRouter([
         {
@@ -36,7 +35,7 @@ const Body = () => {
             } else {
               // User is signed out
               dispatch(removeUser())
-              
+              // navigate("/")
 
             }
           });
