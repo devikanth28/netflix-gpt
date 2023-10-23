@@ -3,7 +3,7 @@ import PlayIcon from "./images/icons8-play-50.png";
 import InfoIcon from "./images/icons8-info-50.png";
 const VideoTitle = ({title, overview}) => {
   return (
-    <div className='px-5 text-start position-absolute text-white aspet-ratio' style={{"margin-top":"25%"}}>
+    <div className='px-5 text-start position-absolute text-white aspet-ratio' style={{"margin-top":"15%"}}>
         <h1>{title}</h1>
         <p className='w-25'>{overview}</p>
         <div>

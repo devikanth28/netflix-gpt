@@ -2,6 +2,7 @@ export const LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897
 
 export const Photo_Avatar = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
 
+export const ImageCDN = "https://image.tmdb.org/t/p/w200"
 
 export const API_OPTIONS = {
     method: 'GET',
