@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 const MovieList = ({ title, movies }) => {
     console.log("Movies", movies)
     return (
-        <div className='p-3 bg-black'>
+        <div className='p-3 bg-black bg-opacity-50'>
             <div>
                 <h3 className='text-start text-white'>{title}</h3>
             </div>

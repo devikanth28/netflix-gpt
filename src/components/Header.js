@@ -47,6 +47,7 @@ const Header = () => {
 
 const handleGptSearch = () =>{
   dispatch(toggleSearchView())
+  // dispatch(addSuggestedMovies())
 }
 
 const handleLanguageChange = (value) =>{
